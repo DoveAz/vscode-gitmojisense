@@ -40,8 +40,7 @@ export default class EmojiCompletionProvider implements vscode.CompletionItemPro
             return this.getMarkupEmojiCompletions(document, replacementSpan);
         }
 
-        return this.getUnicodeEmojiCompletions(document, replacementSpan)
-            .concat(this.getMarkupEmojiCompletions(document, replacementSpan));
+        return this.getUnicodeEmojiCompletions(document, replacementSpan);
     }
 
     private getUnicodeEmojiCompletions(
