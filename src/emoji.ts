@@ -31,8 +31,12 @@ export class EmojiProvider {
             //         }
             //     }
             // }
+            const noDescriptionList = ["safety-vest", "clown-face"];
             for (const g of gitmojis) {
-                const name = g.name + ' ' + g.description;
+                let name = g.name;
+                if (!noDescriptionList.includes(g.name)) {
+                    name = g.name + " " + g.description;
+                }
                 if (!this._emojiMap.has(name)) {
                     this._emojiMap.set(name, {
                         name: name,

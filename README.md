@@ -1,3 +1,5 @@
+## all function like :emojisense: but use gitmoji
+
 Adds suggestions and autocomplete for emoji to VS Code.
 
 ![Example](https://raw.githubusercontent.com/mattbierner/vscode-emojisense/master/media/example.gif)
